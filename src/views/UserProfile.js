@@ -18,7 +18,7 @@ function User() {
     <>
       <Container fluid>
         <Row>
-          <Col md="8">
+          {/* <Col md="8">
             <Card>
               <Card.Header>
                 <Card.Title as="h4">Edit Profile</Card.Title>
@@ -205,6 +205,9 @@ function User() {
                 </Button>
               </div>
             </Card>
+          </Col> */}
+          <Col>
+          <h4>users</h4>
           </Col>
         </Row>
       </Container>

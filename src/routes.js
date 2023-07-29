@@ -1,71 +1,55 @@
-/*!
 
-=========================================================
-* Light Bootstrap Dashboard React - v2.0.1
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/light-bootstrap-dashboard-react
-* Copyright 2022 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/light-bootstrap-dashboard-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-import Dashboard from "views/Dashboard.js";
+import Category from "views/Category.js";
 import UserProfile from "views/UserProfile.js";
-import TableList from "views/TableList.js";
-import Typography from "views/Typography.js";
-import Icons from "views/Icons.js";
+import Island from "views/Island.js";
+import SubCategory from "views/SubCategory.js";
+import PaymentPlans from "views/PaymentPlans.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
 import Upgrade from "views/Upgrade.js";
 
 const dashboardRoutes = [
+  // {
+  //   upgrade: true,
+  //   path: "/upgrade",
+  //   name: "Upgrade to PRO",
+  //   icon: "nc-icon nc-alien-33",
+  //   component: Upgrade,
+  //   layout: "/admin"
+  // },
   {
-    upgrade: true,
-    path: "/upgrade",
-    name: "Upgrade to PRO",
-    icon: "nc-icon nc-alien-33",
-    component: Upgrade,
-    layout: "/admin"
-  },
-  {
-    path: "/dashboard",
-    name: "Dashboard",
+    path: "/category",
+    name: "Category",
     icon: "nc-icon nc-chart-pie-35",
-    component: Dashboard,
+    component: Category,
     layout: "/admin"
   },
   {
-    path: "/user",
-    name: "User Profile",
+    path: "/users",
+    name: "Users Profiles",
     icon: "nc-icon nc-circle-09",
     component: UserProfile,
     layout: "/admin"
   },
   {
-    path: "/table",
-    name: "Table List",
+    path: "/island",
+    name: "Island",
     icon: "nc-icon nc-notes",
-    component: TableList,
+    component: Island,
     layout: "/admin"
   },
   {
-    path: "/typography",
-    name: "Typography",
+    path: "/sub-category",
+    name: "Sub Category",
     icon: "nc-icon nc-paper-2",
-    component: Typography,
+    component: SubCategory,
     layout: "/admin"
   },
   {
-    path: "/icons",
-    name: "Icons",
+    path: "/payment-plans",
+    name: "Payment Plans",
     icon: "nc-icon nc-atom",
-    component: Icons,
+    component: PaymentPlans,
     layout: "/admin"
   },
   {
